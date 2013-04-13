@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: test_app_development
+  pool: 5
+  username: <%= ENV["DATABASE_USER"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: test_app_test
+  pool: 5
+  username: <%= ENV["DATABASE_USER"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: test_app_production
+  pool: 5
+  username: <%= ENV["DATABASE_USER"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
