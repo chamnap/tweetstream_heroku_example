@@ -1,7 +1,13 @@
-Tweetstream Daemon on Heroku
-============================
+Tweetstream on Heroku
+=====================
 
-Sample app for using Tweetstream daemon on heroku.
+There are 3 things to notice:
+
+1. [Profile](https://github.com/chamnap/tweetstream_heroku_example/blob/master/Procfile#L1), use `run` instead of `start`. This process must be run in foreground.
+
+2. If you use `TweetStream::Daemon`, you must set `multiple` to `true` inside `daemon_options`, otherwise you'll see `ERROR: there is already one or more instance(s) of the program running` (I don't know why).
+
+3. It's okay to use `TweetStream::Worker` in this worker.
 
 Deploying
 ---------
