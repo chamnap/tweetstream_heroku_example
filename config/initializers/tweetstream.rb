@@ -1,9 +1,9 @@
 require 'tweetstream'
 
 TweetStream.configure do |config|
-  config.consumer_key       = "jAkZG7JY8ouBeyTHvj00A"
-  config.consumer_secret    = "hkFDYzBrmitxXJTHrrh9fKgiAEtFSM9iMqysEG73iY"
-  config.oauth_token        = "1263788426-bauDB8qSDDG7bzArEQJE98DmZfvwPVpy9Leibsu"
-  config.oauth_token_secret = "ZNPVGrKmgDbCdGsbMjRK3j6RESduEGrbwp1waB83rE"
+  config.consumer_key       = "CpQRGSIEQOelSGQci7YRTQ"
+  config.consumer_secret    = "jq9rGXRbzKpOM079q6QC2mlPNsrkojhIuZiOPO1VkQs"
+  config.oauth_token        = "14653933-ZDyNKAXEAgm9sCEaLx2CJEjjEV6ualEfYPpf3b7ex"
+  config.oauth_token_secret = "vEP7uHLGkMxgt4bTrZy0Tx4dNdfwaswK5FfZBjDI"
   config.auth_method        = :oauth
 end
