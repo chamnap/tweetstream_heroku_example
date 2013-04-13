@@ -4,8 +4,7 @@ root = File.expand_path(File.join(File.dirname(__FILE__), '.'))
 require File.join(root, "config", "environment")
 
 daemon = TweetStream::Daemon.new('tracker',
-  log_dir: "#{Rails.root}/log",
-  log_output: true,
+  log_output: false,
   backtrace: true,
   monitor: true,
   multiple: true,
