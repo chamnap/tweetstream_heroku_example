@@ -7,7 +7,7 @@ There are 3 things to notice:
 
 2. If you use `TweetStream::Daemon`, you must set `multiple` to `true` inside `daemon_options`, otherwise you'll see `ERROR: there is already one or more instance(s) of the program running` (I don't know why).
 
-3. It's okay to use `TweetStream::Worker` in this worker.
+3. It's okay to use `TweetStream::Client` in this worker.
 
 Deploying
 ---------
