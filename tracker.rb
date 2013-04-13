@@ -8,7 +8,8 @@ daemon = TweetStream::Daemon.new('tracker',
   log_output: true,
   backtrace: true,
   monitor: true,
-  multiple: true
+  multiple: true,
+  no_pidfiles: true
 )
 daemon.on_inited do
   ActiveRecord::Base.connection.reconnect!
