@@ -6,6 +6,8 @@ require File.join(root, "config", "environment")
 daemon = TweetStream::Daemon.new('tracker',
   log_dir: "#{Rails.root}/log",
   log_output: true,
+  backtrace: true,
+  monitor: true,
   multiple: true
 )
 daemon.on_inited do
